@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary": "#00344b",
+              "on-secondary-fixed-variant": "#454747",
+              "on-tertiary-fixed-variant": "#004c6a",
+              "on-tertiary-container": "#004b68",
+              "tertiary-fixed": "#c5e7ff",
+              "primary-fixed": "#ffe088",
+              "surface-bright": "#393939",
+              "on-primary": "#3c2f00",
+              "secondary": "#c6c6c7",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#574500",
+              "primary": "#f2ca50",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-primary-fixed": "#241a00",
+              "on-background": "#e5e2e1",
+              "surface-container-highest": "#353535",
+              "inverse-primary": "#735c00",
+              "on-error": "#690005",
+              "secondary-fixed": "#e2e2e2",
+              "error": "#ffb4ab",
+              "on-primary-container": "#554300",
+              "surface-tint": "#e9c349",
+              "outline-variant": "#4d4635",
+              "error-container": "#93000a",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-container": "#b4b5b5",
+              "tertiary": "#96d6ff",
+              "surface": "#131313",
+              "surface-variant": "#353535",
+              "primary-container": "#d4af37",
+              "outline": "#99907c",
+              "tertiary-container": "#78bbe3",
+              "on-surface": "#e5e2e1",
+              "on-surface-variant": "#d0c5af",
+              "surface-dim": "#131313",
+              "secondary-fixed-dim": "#c6c6c7",
+              "primary-fixed-dim": "#e9c349",
+              "on-secondary": "#2f3131",
+              "surface-container": "#20201f",
+              "tertiary-fixed-dim": "#8ccef8",
+              "secondary-container": "#454747",
+              "surface-container-lowest": "#0e0e0e",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#001e2d",
+              "background": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift-on-scroll {
+        transition: background-color 0.4s ease;
+      }
+      .glass-card {
+        backdrop-filter: blur(12px);
+        background: rgba(28, 27, 27, 0.7);
+      }
+      body {
+        background-color: #0e0e0e;
+        color: #e5e2e1;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/30 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-neutral-950/80 px-12 py-6">
+<div class="max-w-screen-2xl mx-auto flex justify-between items-center">
+<div class="text-2xl font-serif font-bold tracking-widest text-amber-600 dark:text-amber-500">JS Consulting</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-serif italic tracking-tight text-amber-600 dark:text-amber-500 border-b-2 border-amber-500 pb-1" href="index.html">Home</a>
+<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="services.html">Services</a>
+<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="about.html">About</a>
+<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="contact.html">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 font-label text-xs uppercase tracking-[0.2em] font-bold hover:opacity-80 transition-opacity duration-300 rounded-sm">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative px-12 py-24 md:py-40 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto relative z-10">
+<div class="max-w-4xl">
+<span class="block font-label text-primary uppercase tracking-[0.4em] mb-6 text-xs font-semibold">Our Heritage</span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl leading-[1.1] italic tracking-tight mb-12">
+                        The Architects <br/>of <span class="text-primary-fixed-dim">Growth.</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        Precision in strategy, elegance in execution. We define the future of enterprise through a lens of curated excellence.
+                    </p>
+</div>
+</div>
+<!-- Decorative Asymmetric Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-surface-container-low to-transparent -z-0 opacity-50"></div>
+</section>
+<!-- Our Story: The Editorial Block -->
+<section class="px-12 py-32 bg-surface-container-lowest">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+<div class="lg:col-span-7 relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden rounded-sm">
+<img alt="Heritage Boardroom" class="w-full h-full object-cover grayscale contrast-125 brightness-75" data-alt="dramatic black and white high-contrast wide shot of a modern minimalist boardroom with a long marble table and focused professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYIcHFvfSnxcqQzbJTUBhizB52sTPNhEkjoBRxaxk52lcmIQNHJOyoxU5kNeFlqGeLoV3BDXtv_aOS73Pz4fRiskHg_AKrkKQfCRvKrobI1OTvRv-QnqBtZip17VfTiL26RC9ONL63onj25IkHg5XsLI2IYDJA2L3YspA-Wk17flGkyDGSFB6GrR4KpXMORya2WXnVMeCJF0HWvmpoOto_PJqaqwzxgvE5FpkE4wPG4f3knFWNHw4bob9eyR2NlDyEAMG0sIOHNtl"/>
+</div>
+<!-- Overlapping Typography Element -->
+<div class="absolute -bottom-12 -right-12 hidden xl:block glass-card p-12 border-l border-t border-outline-variant/20 max-w-md">
+<p class="font-headline text-3xl italic text-primary leading-tight">
+                            "Excellence is not an act, but a habit of precision."
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center">
+<h2 class="font-headline text-5xl mb-10 tracking-tight">Legacy of Precision</h2>
+<div class="space-y-8 text-on-surface-variant leading-loose font-light text-lg">
+<p>
+                            Founded in the quiet corridors of strategic high-finance, JS Consulting emerged from a singular realization: that true growth requires more than just capital—it requires architecture. 
+                        </p>
+<p>
+                            For two decades, we have operated as the silent engine behind some of the world's most significant market transitions. Our methodology is rooted in the "Curated Monolith"—an approach that treats every client portfolio as a unique architectural masterpiece.
+                        </p>
+<p>
+                            We do not believe in templates. We believe in the rigorous application of intellect, the quiet strength of heritage, and the relentless pursuit of client success that echoes across generations.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Pillars: Refined Grid -->
+<section class="px-12 py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 border-b border-outline-variant/20 pb-12">
+<h2 class="font-headline text-4xl md:text-6xl italic">The Foundation</h2>
+<p class="font-label uppercase tracking-widest text-neutral-500 text-sm mt-4 md:mt-0">Our Core Pillars</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-outline-variant/20">
+<!-- Pillar 1 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8" data-icon="shield">shield</span>
+<h3 class="font-headline text-2xl mb-6">Integrity</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                            Absolute discretion and ethical rigor are the bedrocks of our practice. We operate as stewards of your vision, ensuring trust is never compromised.
+                        </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8" data-icon="architecture">architecture</span>
+<h3 class="font-headline text-2xl mb-6">Precision</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                            Every decision is calculated; every move is deliberate. We eliminate the noise of the market to focus on the signals that drive sustainable growth.
+                        </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8" data-icon="visibility">visibility</span>
+<h3 class="font-headline text-2xl mb-6">Vision</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                            We look beyond the immediate quarter. Our strategies are designed to endure, creating legacies that stand firm against the volatility of time.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Preview: Refined Layout -->
+<section class="px-12 py-32 bg-surface-container-lowest">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-24 text-center max-w-3xl mx-auto">
+<span class="font-label text-primary uppercase tracking-[0.4em] mb-4 block text-xs">Leadership</span>
+<h2 class="font-headline text-5xl italic">The Curators of Success</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Leader 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-high relative">
+<img alt="Founder Profile" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="professional headshot of a mature executive man in a tailored dark suit, soft natural lighting, minimalist grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRkkV02nIfyBhoRvnjljZeMON5Hoe_JycVgI-ah5LDsmH7OievGe6Siu7eUZu7HBnVK5-91QrMs1myt8VMQlmsw7EKlCM3gfd_b9l2ZZ_r7u6yCe8KED-4QzPc1H3xlmkd87VF50fdkWZ222XziDddOmdMe40fh8f7DM2L8dsT9FXezMyaT4VRIjvdRtATNfkPEYAhH3lnu2NHqkblVb9IFUdzNKdOQyMJ7c11oVLQKMjBorDXZ0Pxx5vrmitMp0hyEjc8UUtTbvEs"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline text-xl mb-1">Julian Sterling</h4>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-4">Managing Partner</p>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                            Former Chief Strategist with 25 years in global expansion.
+                        </p>
+</div>
+<!-- Leader 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-high relative">
+<img alt="Executive Profile" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="refined professional headshot of a female executive in a white silk blouse, soft focus office background, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFJlmE5Pui723qn0Lsc4uAI9MXgtBJH3DDJx4E-3IDHm69KFx4z4uyGyoMshiNQEglQ0kc3ehMYyxH2FcGWS8sF3wuWkmzW1RpQKzKT-FbVQdQ2UZ0Q-_BdxgJ64exQ5ntWQwmgQbsNisUFrH-SPZL88mxIo6suuKK4W4nZVCM6hOlX5A9Crt70XjRtrVkcAJHl-GxHDvBQaWpIPe9QJl3HPFzdFi2MNnFV4MTzpXarfCKa3VN2mR8kHJObInuPMfAt9dldo8SlIOi"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline text-xl mb-1">Elena Vance</h4>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-4">Director of Operations</p>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                            A specialist in operational efficiency and luxury brand scaling.
+                        </p>
+</div>
+<!-- Leader 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-high relative">
+<img alt="Advisor Profile" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="close-up portrait of a young male professional in a charcoal turtleneck, minimalist studio lighting, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9huwVGmkAfsoGtg1DYHO1KM0H4zstS9qNSdcLuhncPeYqUiS3F41R3-J8BB9xXrncZep8ClOLvuJTxLxSi90vroetZGq4wKcaAH4tuY_2XdzoOEojSWhJ4wk1wVKfD-xyeExsX7QQYz44Xrj5KOhV2ZIU5IwwWFB9BXmSg9R9l61tAvGrhRzCfJenJRWaIpICx9bz5GCI6a9J14MI89lUw3--IpY4EyJlFeybGoziD9Y82uRXPdkMpmqw1u1wxdM6Tkc7qObyqdS0"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline text-xl mb-1">Marcus Thorne</h4>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-4">Senior Market Advisor</p>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                            Expert in emerging market dynamics and algorithmic risk management.
+                        </p>
+</div>
+<!-- Leader 4 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-high relative">
+<img alt="Counsel Profile" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="professional portrait of a woman in a structured blazer, modern workspace with architectural lines in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwoju8LLykjZdBSEmtESYExr54LZZ9A8Z562pbs2h6QcNwHvIoygPQSSVo4iF9vN3xQLBCS4O621s02y3gwMekBdcm181rzAfs5bYPPnhx9gVmlJpn2WK78YKXzuSjk2CfvPyqz888B8rod3zRJNLbFwrSQOGB8YglQ9JgIrb2uyC0ulaZjQjA0VB1I7AGQ32W2g3YaDa3FMs79DeNVJ9fnFDBBsb6wbkIf_8kt1I52TI5gsIQ_-ZP8v8tvdQ5T-dbtFVmxJp0DbIW"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline text-xl mb-1">Sophia Chen</h4>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-4">General Counsel</p>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                            Navigating complex regulatory landscapes with legal precision.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-12 py-40 text-center bg-surface relative overflow-hidden">
+<div class="max-w-4xl mx-auto relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl italic mb-12">Shape your legacy.</h2>
+<div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+<button class="bg-primary text-on-primary px-12 py-5 font-label text-sm uppercase tracking-widest font-bold hover:opacity-90 transition-opacity rounded-sm">
+                        Request Consultation
+                    </button>
+<button class="border border-outline-variant/30 text-primary px-12 py-5 font-label text-sm uppercase tracking-widest font-bold hover:bg-outline-variant/10 transition-colors rounded-sm">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-50"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 border-t border-neutral-800 bg-neutral-900 dark:bg-neutral-950">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="text-xl font-serif text-neutral-100 mb-6">JS Consulting Services</div>
+<p class="font-sans text-sm tracking-widest uppercase text-neutral-400">© 2022 JS Consulting Services (Pty) Ltd. Excellence Redefined.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<p class="font-sans text-xs uppercase tracking-[0.2em] text-amber-500 font-bold mb-2">Navigation</p>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors font-sans text-sm uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors font-sans text-sm uppercase tracking-widest" href="#">Terms of Service</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<p class="font-sans text-xs uppercase tracking-[0.2em] text-amber-500 font-bold mb-2">Connect</p>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors font-sans text-sm uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors font-sans text-sm uppercase tracking-widest" href="#">Insights</a>
+</div>
+<div class="md:col-span-1">
+<p class="font-sans text-xs uppercase tracking-[0.2em] text-amber-500 font-bold mb-4">Location</p>
+<p class="text-neutral-400 text-sm tracking-widest leading-relaxed">
+                    Park Avenue South<br/>
+                    New York, NY 10010
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
