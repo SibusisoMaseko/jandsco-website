@@ -1,0 +1,205 @@
+---
+---
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=1200" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary": "#00344b",
+              "on-secondary-fixed-variant": "#454747",
+              "on-tertiary-fixed-variant": "#004c6a",
+              "on-tertiary-container": "#004b68",
+              "tertiary-fixed": "#c5e7ff",
+              "primary-fixed": "#ffe088",
+              "surface-bright": "#393939",
+              "on-primary": "#3c2f00",
+              "secondary": "#c6c6c7",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#574500",
+              "primary": "#f2ca50",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-primary-fixed": "#241a00",
+              "on-background": "#e5e2e1",
+              "surface-container-highest": "#353535",
+              "inverse-primary": "#735c00",
+              "on-error": "#690005",
+              "secondary-fixed": "#e2e2e2",
+              "error": "#ffb4ab",
+              "on-primary-container": "#554300",
+              "surface-tint": "#e9c349",
+              "outline-variant": "#4d4635",
+              "error-container": "#93000a",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-container": "#b4b5b5",
+              "tertiary": "#96d6ff",
+              "surface": "#131313",
+              "surface-variant": "#353535",
+              "primary-container": "#d4af37",
+              "outline": "#99907c",
+              "tertiary-container": "#78bbe3",
+              "on-surface": "#e5e2e1",
+              "on-surface-variant": "#d0c5af",
+              "surface-dim": "#131313",
+              "secondary-fixed-dim": "#c6c6c7",
+              "primary-fixed-dim": "#e9c349",
+              "on-secondary": "#2f3131",
+              "surface-container": "#20201f",
+              "tertiary-fixed-dim": "#8ccef8",
+              "secondary-container": "#454747",
+              "surface-container-lowest": "#0e0e0e",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#001e2d",
+              "background": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            color: #f2ca50;
+        }
+        .tonal-shift-on-scroll {
+            transition: background-color 0.4s ease;
+        }
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+<body class="bg-surface-container-lowest text-on-background selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-neutral-950/80 px-12 py-6">
+<div class="flex justify-between items-center max-w-screen-2xl mx-auto">
+<span class="text-2xl font-serif font-bold tracking-widest text-amber-600 dark:text-amber-500">JS Consulting</span>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="index.html">Home</a>
+<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="services.html">Services</a>
+<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="about.html">About</a>
+<a class="font-serif italic tracking-tight text-amber-600 dark:text-amber-500 border-b-2 border-amber-500 pb-1" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-primary text-on-primary px-6 py-2 text-sm font-semibold tracking-widest uppercase hover:opacity-80 transition-opacity duration-300 rounded-sm">Get Started</a>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero / Introduction Section -->
+<section class="max-w-screen-2xl mx-auto px-12 mb-24">
+<div class="flex flex-col md:flex-row items-end gap-12">
+<div class="w-full md:w-2/3">
+<span class="inline-block text-primary font-body text-xs tracking-[0.3em] uppercase mb-6">Expertise &amp; Heritage</span>
+<h1 class="text-6xl md:text-8xl font-serif italic leading-tight text-on-surface tracking-tighter">
+                        A Full Spectrum of <br/>Business Solutions.
+                    </h1>
+</div>
+<div class="w-full md:w-1/3 pb-4">
+<p class="text-on-surface-variant font-body leading-relaxed text-lg border-l border-outline-variant/30 pl-8">
+                        Our commitment to growth and compliance defines every engagement. We navigate complexity to ensure your business remains resilient, agile, and ahead of regulatory shifts in an ever-evolving global economy.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Service Grid: Editorial Bento Style -->
+<section class="max-w-screen-2xl mx-auto px-12 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Liquor Licensing -->
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-low aspect-[16/9] md:aspect-auto md:h-[500px]">
+<img alt="High-end bar interior" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of elegant crystal glassware and amber liquor bottles in a moody upscale bar with soft golden highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfBmmfE5xqRF7MxxdseUgHNLFJ0o7vhJVYjT-zMBG-QnIxTS9Dyk3VZZRAc9m_EWoXqTuhaYYpVu9_qcEHlX6BlmeDqd_H2N9YN1mcpGP5nmXAf2mDxYaJzfypgtpQxmdpSD9i49RED__OJ6zZR5Aq1LMpycwMFAndgRdBC7HpDLg_exIC6GQeCL3IL4t-XbHRfZqSGD4AQ2IgLnsYR6Olrf0uXjyQPmcc6-vI9jhh9gP_jbBiO7I9oF62gS3rqoBImKi7JcqdMdx6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="wine_bar">wine_bar</span>
+<h3 class="text-4xl font-serif italic mb-4 text-on-surface">Liquor Licensing</h3>
+<p class="text-on-surface-variant max-w-md font-body">Strategic navigation of regulatory landscapes, ensuring seamless permit acquisition and long-term compliance for premium hospitality ventures.</p>
+</div>
+</div>
+<!-- B2B Sourcing -->
+<div class="md:col-span-5 bg-surface-container-high p-12 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-8 text-4xl" data-icon="inventory_2">inventory_2</span>
+<h3 class="text-3xl font-serif italic mb-6 text-on-surface">B2B Sourcing</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">Optimizing supply chains for efficiency and scale. We connect you with verified global partners to streamline procurement and maximize operational margins.</p>
+</div>
+<div class="mt-12 h-40 overflow-hidden">
+<img alt="Modern logistics hub" class="w-full h-full object-cover grayscale opacity-50" data-alt="Abstract view of organized shipping containers in a geometric pattern with industrial minimalist lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgwyY5NxxHHhoSj9dAb_X0Zltj0-z4S8kEASBJZBUmTPmGpXJme6yG4isAP2BGy9QMnzpkEqmx-9ZQ4wEwDXslvuKLlimPSWDEfjUTsV0k7Iouc7sQMa0xY9ykJgFChEkDUYgqmUGcV9cUogw6IG_lbY4EW16mJ-SLZde4fhO_PelbFUuB_I4BH6MfNT_UPVFTeHp-yz3YrLHoW9VJuKNsGcTmjOHa7AUZ1MHNz8hIyibhNY18EzHXagWc72ZIn_dKHRTl7gz8NujX"/>
+</div>
+</div>
+<!-- Turnkey Business Solutions -->
+<div class="md:col-span-5 bg-surface-container-low p-12 relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary mb-8 text-4xl" data-icon="key">key</span>
+<h3 class="text-3xl font-serif italic mb-6 text-on-surface">Turnkey Business Solutions</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">From inception to operation, we provide comprehensive support. We handle the structural complexities so you can focus on your core vision.</p>
+</div>
+<div class="mt-16 bg-outline-variant/10 h-1 w-full relative">
+<div class="absolute top-0 left-0 h-full w-2/3 bg-primary"></div>
+</div>
+</div>
+<!-- Financial Advisory -->
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-low h-[400px]">
+<img alt="Modern data center server racks with blue led lights" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" data-alt="Minimalist architectural office space with clean lines and soft daylight reflecting on dark polished surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw34KzYo_1D4FIetiQuJkJMtBf-V0WizY9ywkIkS-e8bCPcLYJd12kifknWqEYDjxUo1c7AfAEKhZkzY1Y0gCdnZksuDoJfuc1ezE6NKddji7J2rjYXKCmaN2iPHWcY6cZ-ZgluEcY9pbaM6rPQJXpTJq3zDpf1VD4Pe6gDJrk6kK4GAX-iXbg1kdxzdt2IDLHIqxIjotXLUUIDKohn_jYfvGoT_iRLuKVLkD6Xdr7iw0DNLUqIJKH4ZsSCGc1a1bL66piH4-lUAeq"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="dns">dns</span>
+<h3 class="text-4xl font-serif italic mb-4 text-on-surface">Managed IT &amp; Infrastructure</h3>
+<p class="text-on-surface-variant max-w-lg font-body">High-performance systems for modern enterprise. We architect and manage resilient IT infrastructure that scales with your growth while ensuring uncompromising security and uptime.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: The Editorial Block -->
+<section class="max-w-screen-2xl mx-auto px-12 py-32 border-y border-outline-variant/10">
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="relative z-10">
+<h2 class="text-6xl md:text-7xl font-serif italic text-on-surface leading-tight">
+                        Ready to scale <br/>your vision?
+                    </h2>
+<p class="text-on-surface-variant mt-8 max-w-md text-lg">
+                        Partner with JS Consulting to transform regulatory hurdles into competitive advantages. Your next chapter starts with a conversation.
+                    </p>
+<a href="contact.html" class="mt-12 group flex items-center gap-4 bg-primary text-on-primary px-10 py-5 font-bold tracking-widest uppercase rounded-sm hover:opacity-90 transition-all">Get in Touch<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="w-full md:w-1/2 aspect-square bg-surface-container-high relative">
+<img alt="Executive meeting room" class="w-full h-full object-cover mix-blend-luminosity opacity-60" data-alt="Dramatic high-angle shot of a minimalist black executive boardroom table with a single golden light pendant above" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRkUCP3AqTOtQXowQh4mOe6D4fXzaALof-zIlWA2LDszQwIifpRIpVUz51fPO5XSh2gWSfVLQMWKC1eBTPGqmgn0MNiOzeMC49lpJXzBN66EpcKHCxOvQ4ndg2R4KKQrdxUjLkUHXXkzCvTuA7eQ3m-yutgwHMgOoYMZQbkgi9HWI4ZPwWziCIRIncA7NcCYGwI1X0p8KS1qHTUR9kr_mIni1IkpfB9P183J5BsBZ-22NJ7KTIGOgEPtOMxDSUsUUF65zdLlYsyDTC"/>
+<div class="absolute -top-8 -left-8 w-32 h-32 border border-primary/30 hidden md:block"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-900 dark:bg-neutral-950 w-full py-20 px-12 border-t border-neutral-800">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-serif text-neutral-100 block mb-6">JS Consulting Services</span>
+<p class="font-sans text-sm tracking-widest uppercase text-neutral-400 leading-loose">
+                    © 2022 JS Consulting Services (Pty) Ltd.<br/>
+</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-amber-500 font-label tracking-widest uppercase text-xs mb-2">Legal</h5>
+<a class="font-sans text-sm tracking-widest uppercase text-neutral-500 hover:text-amber-500 transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans text-sm tracking-widest uppercase text-neutral-500 hover:text-amber-500 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-amber-500 font-label tracking-widest uppercase text-xs mb-2">Contact</h5>
+<p class="font-sans text-sm tracking-widest uppercase text-neutral-400">
+                    Johannesburg &amp; Southern Africa<br/>
+                    info@jandsco.co.za
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
