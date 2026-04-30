@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<head>
-  <title>Contact | JSConsulting</title>
-</head>
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=1200" name="viewport"/>
@@ -10,11 +7,10 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
-        theme: {f
+        theme: {
           extend: {
             colors: {
               "surface-container-low": "#1c1b1b",
@@ -29,7 +25,7 @@
               "secondary": "#c6c6c7",
               "inverse-on-surface": "#313030",
               "on-primary-fixed-variant": "#574500",
-              "primary": "#f2ca50",
+              "primary": "#d4af37",
               "on-secondary-fixed": "#1a1c1c",
               "on-primary-fixed": "#241a00",
               "on-background": "#e5e2e1",
@@ -74,8 +70,7 @@
           },
         },
       }
-    <script>
-</script>
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -84,30 +79,30 @@
             transition: background-color 0.3s ease;
         }
     </style>
-  <link rel="icon" type="image/x-icon" href="/favicon.png">
+<link href="/favicon.png" rel="icon" type="image/x-icon"/>
 </head>
 <body class="bg-surface-container-lowest text-on-background font-body selection:bg-primary/30 selection:text-primary">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-neutral-950/80">
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-md">
 <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-serif font-bold tracking-widest text-amber-600 dark:text-amber-500">
+<div class="text-2xl font-headline font-bold tracking-widest text-primary">
                 JS Consulting
             </div>
 <div class="hidden md:flex space-x-12 items-center">
-<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="index.html">Home</a>
-<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="services.html">Services</a>
-<a class="font-serif italic tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-amber-500 transition-colors" href="about.html">About</a>
-<a class="font-serif italic tracking-tight text-amber-600 dark:text-amber-500 border-b-2 border-amber-500 pb-1" href="contact.html">Contact</a>
+<a class="font-headline italic tracking-tight text-on-surface/60 hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-headline italic tracking-tight text-on-surface/60 hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-headline italic tracking-tight text-on-surface/60 hover:text-primary transition-colors" href="about.html">About</a>
+<a class="font-headline italic tracking-tight text-primary border-b-2 border-primary pb-1" href="contact.html">Contact</a>
 </div>
-<a href="contact.html" class="bg-primary text-on-primary px-8 py-2 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity duration-300 transform active:scale-95 duration-200 ease-in-out">Get Started</a>
+<a class="bg-primary text-on-primary px-8 py-2 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity duration-300 transform active:scale-95" href="contact.html">Get Started</a>
 </div>
 </nav>
-<main class="pt-32 pb-20 px-6 md:px-12 max-w-screen-2xl mx-auto min-h-screen">
+<main class="pt-48 pb-20 px-6 md:px-12 max-w-screen-2xl mx-auto min-h-screen">
 <!-- Editorial Header Block -->
 <header class="mb-24 relative">
-<span class="label-sm uppercase tracking-[0.4em] text-primary mb-4 block">Connect with Excellence</span>
+<span class="font-label text-xs uppercase tracking-[0.4em] text-primary mb-4 block">Connect with Excellence</span>
 <h1 class="font-headline text-6xl md:text-8xl tracking-tight leading-none text-on-surface">
-                Elevate your <br/> <span class="italic text-primary-container">Legacy.</span>
+                Elevate your <br/> <span class="italic text-primary/80">Legacy.</span>
 </h1>
 </header>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
@@ -134,16 +129,16 @@
 </div>
 </section>
 <!-- Minimalist Map -->
-<div class="relative w-full aspect-video md:aspect-[4/3] bg-surface-container-low overflow-hidden shadow-2xl">
+<div class="relative w-full aspect-video md:aspect-[4/3] bg-surface-container-low overflow-hidden shadow-2xl border border-outline-variant/10">
 <div class="absolute inset-0 grayscale opacity-40 mix-blend-luminosity hover:opacity-60 transition-opacity duration-700">
 <img class="w-full h-full object-cover" data-alt="Minimalist top-down dark satellite map of Sandton Johannesburg district with high contrast roads and golden pin marker" data-location="Johannesburg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0t_OEzS1mTjEWm5QAn4eeY872c_Vtb0m7Fhr-_xVRrCOVbdR2eEzUi926gmqrb-0SKgnt8U9fw0oJt3Nzp9USll2eyjRW2VWF74AtTVbBLfvtw5437RFB3DlWlTNBH-tYsCeORBRIKnrGEqXPLsWWzp9asKMO19j-N940hXtGqIoqHykAu_RQqR78EB5O2qXgwLF0UFjKBf9Oi3AK1Yvm0c0lwz1U_BM10gAf1hpNSxTh-qoODVEO0zoXroSHPTmeOMu5aQv_kYdE"/>
 </div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent pointer-events-none"></div>
 <!-- Map Pin Decorative -->
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 <div class="relative flex items-center justify-center">
 <div class="absolute w-8 h-8 bg-primary/20 rounded-full animate-ping"></div>
-<div class="w-3 h-3 bg-primary rounded-full shadow-[0_0_15px_rgba(242,202,80,0.8)]"></div>
+<div class="w-3 h-3 bg-primary rounded-full shadow-[0_0_15px_rgba(212,175,55,0.8)]"></div>
 </div>
 </div>
 <div class="absolute bottom-6 left-6 flex items-center gap-2">
@@ -153,79 +148,77 @@
 </div>
 </div>
 <!-- Right Column: Get Started Form -->
-<div class="lg:col-span-7 bg-surface-container p-8 md:p-16 relative">
+<div class="lg:col-span-7 bg-surface-container-high p-8 md:p-16 relative border border-outline-variant/10">
 <!-- Tonal Lift Accent -->
 <div class="absolute -top-4 -left-4 w-24 h-24 border-t border-l border-primary/30 pointer-events-none"></div>
 <h2 class="font-headline text-3xl mb-12 text-on-surface">Initiate Consultation</h2>
-<form action="https://formspree.io/f/meevbdor" method="POST" class="space-y-10">
+<form action="https://formspree.io/f/meevbdor" class="space-y-10" method="POST">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 <div class="relative group">
 <label class="font-label text-xs uppercase tracking-widest text-outline group-focus-within:text-primary transition-colors mb-2 block" for="name">Full Name</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-surface-variant transition-all" id="name" name="name" placeholder="Enter your full name" type="text"/>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-on-surface-variant/30 transition-all" id="name" name="name" placeholder="Enter your full name" type="text"/>
 </div>
 <div class="relative group">
 <label class="font-label text-xs uppercase tracking-widest text-outline group-focus-within:text-primary transition-colors mb-2 block" for="email">Email Address</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-surface-variant transition-all" id="email" name="_replyto" type="email" placeholder="Enter your email address" required/>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-on-surface-variant/30 transition-all" id="email" name="_replyto" placeholder="Enter your email address" required="" type="email"/>
 </div>
 </div>
 <div class="relative group">
 <label class="font-label text-xs uppercase tracking-widest text-outline group-focus-within:text-primary transition-colors mb-2 block" for="service">Service of Interest</label>
 <select class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 appearance-none transition-all" id="service" name="service">
-<option class="bg-surface-container">Select a strategic service...</option>
-<option class="bg-surface-container">B2B Sourcing</option>
-<option class="bg-surface-container">Liquor Licensing</option>
-<option class="bg-surface-container">Turnkey Business Solutions</option>
+<option class="bg-surface-container-high">Select a strategic service...</option>
+<option class="bg-surface-container-high">B2B Sourcing</option>
+<option class="bg-surface-container-high">Liquor Licensing</option>
+<option class="bg-surface-container-high">Turnkey Business Solutions</option>
 </select>
 </div>
 <div class="relative group">
 <label class="font-label text-xs uppercase tracking-widest text-outline group-focus-within:text-primary transition-colors mb-2 block" for="message">Message</label>
-<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-surface-variant transition-all resize-none" id="message" name="message" placeholder="How may we assist your trajectory?" rows="4"></textarea>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-on-surface-variant/30 transition-all resize-none" id="message" name="message" placeholder="How may we assist your trajectory?" rows="4"></textarea>
 </div>
-<div class="pt-8 flex items-center justify-between">
-<p class="text-[10px] text-outline max-w-[240px] leading-relaxed uppercase tracking-tighter">
+<div class="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+<p class="text-[10px] text-outline max-w-[240px] leading-relaxed uppercase tracking-widest">
                             By submitting, you agree to our private engagement protocols and data handling.
                         </p>
-<button class="group flex items-center gap-4 bg-primary text-on-primary px-10 py-4 font-label font-bold uppercase tracking-[0.2em] text-xs hover:bg-primary-container transition-all" type="submit">
+<button class="group flex items-center gap-4 bg-primary text-on-primary px-10 py-4 font-label font-bold uppercase tracking-[0.2em] text-xs hover:opacity-90 transition-all" type="submit">
                             Submit Message
                             <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-2" data-icon="arrow_right_alt">arrow_right_alt</span>
 </button>
 </div>
-
-        <div id="success-message" style="display: none;" class="mt-8 p-6 bg-primary/10 border border-primary/30 rounded-sm">
-            <p class="text-primary font-headline text-xl mb-2">Message Sent Successfully!</p>
-            <p class="text-on-surface-variant text-sm">Thank you for reaching out. We'll get back to you within 24 hours.</p>
-        </div>
-    </form>
+</form>
 </div>
 </div>
 </main>
 <!-- Footer Component -->
-<footer class="bg-neutral-900 dark:bg-neutral-950 w-full py-20 px-12 border-t border-neutral-800">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-screen-2xl mx-auto">
-<div class="col-span-1 md:col-span-1">
-<span class="text-xl font-serif text-neutral-100 block mb-6">JS Consulting Services</span>
-<p class="font-sans text-sm tracking-widest uppercase text-neutral-400 leading-loose">
-                    © 2022 JS Consulting Services (Pty) Ltd.<br/>
+<footer class="bg-surface-container-lowest w-full py-24 px-12 border-t border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
+<div class="col-span-1">
+<span class="text-xl font-headline font-bold text-primary block mb-6">JS Consulting</span>
+<p class="font-label text-xs tracking-[0.2em] uppercase text-on-surface-variant leading-loose">
+                    Defining the future of commerce <br/> in Southern Africa since 2022.
                 </p>
 </div>
 <div class="flex flex-col gap-4">
-<h5 class="text-amber-500 font-label tracking-widest uppercase text-xs mb-2">Legal</h5>
-<a class="font-sans text-sm tracking-widest uppercase text-neutral-500 hover:text-amber-500 transition-colors" href="privacy-policy.html">Privacy Policy</a>
-<a class="font-sans text-sm tracking-widest uppercase text-neutral-500 hover:text-amber-500 transition-colors" href="terms-of-service.html">Terms of Service</a>
+<h5 class="text-primary font-label tracking-widest uppercase text-xs mb-4">Legal</h5>
+<a class="font-label text-xs tracking-[0.1em] uppercase text-on-surface-variant hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="font-label text-xs tracking-[0.1em] uppercase text-on-surface-variant hover:text-primary transition-colors" href="terms-of-service.html">Terms of Service</a>
 </div>
 <div class="flex flex-col gap-4">
-<h5 class="text-amber-500 font-label tracking-widest uppercase text-xs mb-2">Contact</h5>
-<p class="font-sans text-sm tracking-widest uppercase text-neutral-400">
-                    Johannesburg &amp; Southern Africa<br/>
-                    info@jandsco.co.za
-                </p>
+<h5 class="text-primary font-label tracking-widest uppercase text-xs mb-4">Contact</h5>
+<p class="font-label text-xs tracking-[0.1em] uppercase text-on-surface-variant leading-relaxed">
+                    148 West Street, Sandton<br/>
+                    Johannesburg, South Africa<br/>
+<span class="mt-2 block text-on-surface">info@jandsco.co.za</span>
+</p>
+</div>
+</div>
+<div class="mt-20 pt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center">
+<p class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant/60">© 2022 JS Consulting Services (Pty) Ltd.</p>
+<div class="mt-8 md:mt-0 flex gap-8 grayscale opacity-40">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+</div>
 </div>
 </div>
 </footer>
-<div class="max-w-screen-2xl mx-auto mt-20 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center opacity-100 hover:opacity-70 transition-opacity">
-<p class="font-sans text-sm tracking-widest uppercase text-neutral-400">© 2022 JS Consulting Services (Pty) Ltd.</p>
-<div class="mt-4 md:mt-0 flex gap-8">
-<span class="material-symbols-outlined text-amber-500" data-icon="verified">verified</span>
-</div>
-</div>
 </body></html>
