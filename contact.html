@@ -71,7 +71,61 @@
           },
         },
       }
-    </script>
+    <script>
+window.addEventListener('load', function() {
+    const form = document.querySelector('form');
+    const successMessage = document.getElementById('success-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault(); // Prevent default form submission
+        e.stopPropagation(); // Stop event from bubbling
+        
+        // Disable submit button
+        submitButton.disabled = true;
+        const originalButtonHTML = submitButton.innerHTML;
+        submitButton.textContent = 'Sending...';
+        
+        try {
+            const formData = new FormData(form);
+            
+            // Add the Formspree AJAX endpoint
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok) {
+                // Show success message
+                successMessage.style.display = 'block';
+                // Reset form
+                form.reset();
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                // Handle errors from Formspree
+                alert('There was a problem: ' + (data.error || 'Please try again'));
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was a problem sending your message. Please email us directly at info@jandsco.co.za');
+        } finally {
+            // Re-enable submit button
+            setTimeout(() => {
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonHTML;
+            }, 2000);
+        }
+        
+        return false; // Extra prevention of default behavior
+    });
+});
+</script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
